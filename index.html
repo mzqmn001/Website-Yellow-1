@@ -86,6 +86,205 @@
             font-style: normal;
             line-height: 20px;
         }
+.hero{
+    background-color: #EAEAEA;
+    /* height: 450px; */
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    columns: 1;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+    margin-left: 89px;
+    padding-top: 88px;
+    gap: 200px;
+}
+
+.main{
+    /* margin-top: -30px; */
+    margin: 0;
+    /* display: flex;
+    flex-direction: column; 
+    gap: 35px; */
+    animation: 1s cubic-bezier(0, 0, 0.28, 0.32) 0s 1 slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+.herobtns{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.btnA, .btnC{
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+    /* font-weight: 400; */
+    background-color: var(--seccolor);
+    color: white;
+    border:1px solid var(--seccolor);
+}
+.btnB{
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+    /* background-color: white; */
+    color: var(--seccolor);
+    border: 1px solid var(--seccolor);
+}
+.img1{ margin-left: 85px; }
+
+.fa-cogs, .fa-folder-open, .fa-angle-right{margin-right: 10px;}
+
+.imgsec1{ display: flex;
+justify-self: center;
+align-self: end;}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* This is for second container */
+
+.cont2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 80px 6.5vw 80px 6.5vw;
+    /* margin-left: 20px; */
+    /* padding-bottom: 50px; */
+}
+.iconbox{
+    justify-items: center;
+    border: 1px solid #EAEAEA;
+    padding: 0px 25px 20px 25px;
+}
+.iconbox :nth-child(3){
+    justify-items: center;
+    text-align: center;
+}
+.iconbox i {
+    color: var(--seccolor);
+    /* border: 2px solid blue; */
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 25px 15px 25px;
+    z-index: 100;
+    font-size: 50px;
+    margin-top: -50px;
+}
+
+/* This is for third section with 3 columns */
+.cont3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 80px 6.5vw 80px 6.5vw;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    /* gap: 20px; */
+}
+
+.divider{
+    border: 1px solid var(--seccolor);
+    background-color: var(--seccolor);
+    margin: 10px 0 20px 0;
+    padding: 0;
+}
+
+.pbox1, .pbox2, .pbox3, .pbox4 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 15px 1fr;
+    row-gap: 5px;
+    margin-bottom: 20px;
+    padding: 0;
+    border-bottom: 1px solid #EAEAEA;
+    transition: transform 0.2s ease-in-out; /* Add this line */
+}
+.pbox1:hover, .pbox2:hover, .pbox3:hover, .pbox4:hover {
+    transform: translateX(5px);
+}
+
+.pbox1 h5, .pbox2 h5, .pbox3 h5, .pbox4 h5{ 
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: end;
+    font-weight: 500;
+    color: var(--tercolor);
+ }
+
+ /* NOW THIS IS THE 4TH CONTAINER WHICH CONTAIN SERVICES IN FOUR COLUMNS */
+ .cont4{
+    background-image: url(bg-6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+ }
+
+.solutions{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 80px 6.5vw 80px 6.5vw;
+    padding: 80px 15px 80px 15px;
+}
+
+.sbox1, .sbox2, .sbox3{
+    justify-items: center;
+    /* align-content: center; */
+    border: 4px solid var(--seccolor);
+    margin: 0px 15px 0px 15px;
+    padding: 50px;
+}
+.sbox1 p, .sbox2 p, .sbox3 p{
+    color: white;
+    /* font-size: 20px; */
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+}
+
+.soldetails{ color: white;
+border-bottom: 1px solid var(--seccolor);
+font-family:'Roboto', sans-serif;
+font-weight: 300;
+font-size: 14px;
+line-height: 23px;
+cursor: pointer;
+}
+
+.sbox4{padding: 0px 15px 0px 15px;} 
+
+.sbox4 span
+{color: white; 
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+    font-weight: 300;
+    /* margin-bottom: 20px; */
+}
     </style>
 </head>
 
